@@ -9,7 +9,6 @@ class Post < ApplicationRecord
 
   def click_bait_validation
     test_title = :title.class
-
     title_bool = :title.match?(/Won't Believe|Secret|Top \d*|Guess/)
     byebug
     if :title.match?(/Won't Believe|Secret|Top \d*|Guess/)
